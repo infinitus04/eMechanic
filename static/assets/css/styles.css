@@ -113,12 +113,15 @@ a {
 .nav__img {
   width: 32px;
   border-radius: 50%;
+  margin-right: 0.4rem;
 
 }
 
 .nav__logo {
   color: var(--title-color);
   font-weight: 600;
+  display: flex;
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -136,6 +139,22 @@ a {
     border-radius: 1.25rem 1.25rem 0 0;
     transition: .4s;
   }
+  .titel__eM{
+    display: none;
+  }
+
+  .search__bar{
+    margin-top: -16px;
+  }
+ 
+  
+  
+}
+.titel__eM1{
+
+  display: none;
+  color: black;
+  font-weight: 600;
 }
 
 .nav__list,
@@ -205,7 +224,17 @@ a {
   }
   .contact__lower{
     flex-direction: column;
+
 }
+.titel__eM1{
+
+  display: block;
+}
+.titel__eM1{
+
+  display: block;
+}
+
 }
 
 /* For medium devices */
@@ -217,13 +246,33 @@ a {
   .contact__lower{
       flex-direction: column;
   }
+
+
+ 
 }
+/* second title for mobile rightside */
+@media screen and (max-width: 714px) {
+  .titel__eM1{
+
+    display: block;
+  }
+
+  
+ 
+
+  
+ 
+}
+
 
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
   }
-  
+
+  .search__bar{
+    margin-top: -40px;
+  }
 
   .section {
     padding: 7rem 0 2rem;
@@ -233,10 +282,10 @@ a {
     height: calc(var(--header-height) + 1.5rem);
     /* 4.5rem */
   }
-
+/* 
   .nav__img {
     display: none;
-  }
+  } */
 
   .nav__icon {
     display: none;
@@ -274,6 +323,10 @@ a {
   .nav__name:hover {
     text-decoration: underline;
 
+  }
+
+  .search__bar{
+    margin-top: -40px;
   }
   
 
@@ -453,6 +506,7 @@ a {
 
 }
 
+
 .service__img {
   height: 12rem;
   width: 20rem;
@@ -480,33 +534,22 @@ a {
   background-color: #ffffff;
   position: fixed;
   height: 3rem;
-  width: 90%;
+  width: 100%;
+
   justify-content: left;
   display: flex;
   justify-content: left;
-  border: 1px solid rgb(211, 205, 205);
-  margin-top: -10px;
-  border-radius: 1rem;
+  /* border: 1px solid rgb(211, 205, 205); */
+  /* margin-top: -40px; */
+  /* border-radius: 1rem; */
 
-
-
-}
-
-
-
-
-.search__contain {
-
-  display: block;
-  margin-bottom: 5rem;
-  margin: auto;
 
 
 }
 
 .search__input {
   margin: 0.3rem;
-
+  width: 15rem;
   border: 1px solid rgb(216, 209, 216);
   border-radius: 2rem;
   padding-left: 1rem;
@@ -520,6 +563,7 @@ a {
 .search__img {
   padding: 12px;
   transition: transform .3s;
+
 
   
 }
