@@ -3,11 +3,22 @@ from .models import Product
 
 # Create your views here.
 def home(request):
-    return render(request, "index.html")
+    try:
+        latestProduct = Product.objects.all().order_by('-id')[:5]
+        
+        data = {
+            "products" : latestProduct
+        }
+    except:
+        return HttpResponse("No product availiable")
+        # return HttpResponse("No product currently availiable")
+    
+    return render(request, "index.html",data)
 
 def shop(request):
     try:
         products = Product.objects.all()
+        print(len(products))
         data = {
             "products" : products
         }
