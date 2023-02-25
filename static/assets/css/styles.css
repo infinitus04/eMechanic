@@ -169,10 +169,13 @@ a {
   color: black;
   /* color: black; */
   font-weight: 600;
+ 
+  
 }
 
 .nav__link:focus {
   color: var(--first-color);
+  fill: var(--first-color) ;
 }
 
 
@@ -189,6 +192,9 @@ a {
 
 .nav__icon {
   font-size: 1.5rem;
+  height: 24px;
+  width: 24px;
+ 
 }
 
 /*Active link*/
@@ -531,7 +537,7 @@ a {
 
 
   /* background-color: #e8e3e3; */
-  background-color: #ffffff;
+  background-color: #FFF;
   position: fixed;
   height: 3rem;
   width: 100%;
@@ -550,18 +556,26 @@ a {
 .search__input {
   margin: 0.3rem;
   width: 15rem;
-  border: 1px solid rgb(216, 209, 216);
+  border: 1px solid rgb(196, 196, 196);
   border-radius: 2rem;
   padding-left: 1rem;
-  background-color:rgb(216, 209, 216);
+  background-color: lightgray;
+
+  color: rgb(0, 0, 0);
+/* font-weight: bold; */
+}
+.search__input:hover
+{
+  border: 2px solid black;
+  
 }
 .search__input:focus
 {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .search__img {
-  padding: 12px;
+  padding: 10px;
   transition: transform .3s;
 
 
@@ -569,9 +583,12 @@ a {
 }
 .search__img:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform:  rotate(180deg) scale(1.2);
+ 
   
 }
+
+
 
 /* =====================About block================== */
 .about__contain {

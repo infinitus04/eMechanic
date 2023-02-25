@@ -52,7 +52,8 @@ const ref = ()=>{
 
    for (let index = 0; index < sec2.length; index++) {
     sec2[index].style.display = "";
-    console.log("prssed");
+    
+    
     
    }
     
