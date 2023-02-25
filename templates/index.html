@@ -67,119 +67,31 @@
 
         </section>
 
-        <!--=============== Top Sell ===============-->
+        <!--=============== Recently Added ===============-->
         <section class="container section section__height" id="about">
-            <h2 class="section__title">Top Sell</h2>
+            <h2 class="section__title">Recently Added</h2>
 
-
+            
             <div class="shop__list">
                 <!-- div -> shop__flex 1 block of code (section here) crating by for loop  -->
+                
+                {% for product in products %}
+                    
+                    
                 <section class="shop__flex">
                     <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
+                        <h2 class="font_black">{{product.name}}</h2>
+                        <h3 class="font_black">Rs. {{product.price}}</h3>
+                        <span>{{product.dis}}</span>
                     </div>
                     <div class="right__block">
 
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
+                        <img class="shop__img" src="{{product.img}}" alt= "">
                         <button type="button" class="button__buy">Buy</button>
                     </div>
                 </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-                <section class="shop__flex">
-                    <div class="left__block">
-                        <h2 class="font_black">Panner Chilly Dry</h2>
-                        <h3 class="font_black">$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
-                    </div>
-                    <div class="right__block">
-
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                        <button type="button" class="button__buy">Buy</button>
-                    </div>
-                </section>
-
+                <!-- section and loop end -->
+                {% endfor %}
 
             </div>
 
