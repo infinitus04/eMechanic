@@ -24,68 +24,18 @@
         <section class="container section section__height" id="home">
 
             <div class="service__section">
-
+                
+                {% for service in services %}
+                    
+                    
                 <div class="service__block">
-                    <img class="service__img" src={% static 'assets/freeImg/Free Photo Close up on car care process.jpeg' %} alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
+                    <img class="service__img" src="{{service.img}}" alt="">
+                    <h2 class="font_black">{{service.name}}</h2>
+                    <h3 class="font_black">from Rs. {{service.minPrice}} to Rs. {{service.maxPrice}}</h3>
+                    <span>{{service.dis | safe}}</span>
                     <button type="button" class="button__buy">Whats App</button>
                 </div>
-                <div class="service__block">
-                    <img class="service__img" src={% static 'assets/freeImg/Free Photo Man polish a car in a garage(1).jpeg' %}
-                        alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Whats App</button>
-                </div>
-                <div class="service__block">
-                    <img class="service__img"
-                        src={% static 'assets/freeImg/Free Photo Professional washer in blue uniform washing luxury car with water gun on an open air car wash.jpeg' %}
-                        alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Whats App</button>
-                </div>
-                <div class="service__block">
-                    <img class="service__img"
-                        src={% static 'assets/freeImg/Free Photo Professional washer in blue uniform washing luxury car with water gun on an open air car wash.jpeg' %}
-                        alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Whats App</button>
-                </div>
-                <div class="service__block">
-                    <img class="service__img" src={% static 'assets/freeImg/5.jpeg' %} alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Contact</button>
-                </div>
-                <div class="service__block">
-                    <img class="service__img" src={% static 'assets/freeImg/6.jpeg' %} alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Contact</button>
-                </div>
-                <div class="service__block">
-                    <img class="service__img" src={% static 'assets/freeImg/7.jpeg' %} alt="">
-                    <h2 class="font_black">Panner Chilly Dry</h2>
-                    <h3 class="font_black">$ 69</h3>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni provident
-                        molestiae excepturi ab nostrum deserunt.</span>
-                    <button type="button" class="button__buy">Contact</button>
-                </div>
+                {% endfor %}
             </div>
 
         </section>

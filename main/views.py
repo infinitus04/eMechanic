@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .models import Product
+from .models import Product, Service
 
 # Create your views here.
 def home(request):
@@ -18,7 +18,7 @@ def home(request):
 def shop(request):
     try:
         products = Product.objects.all()
-        print(len(products))
+        # print(len(products))
         data = {
             "products" : products
         }
@@ -36,4 +36,14 @@ def contact(request):
 
 
 def service(request):
-    return render(request, "indexService.html")
+    try:
+        services = Service.objects.all()
+        for s in services:
+            s.dis = s.dis.replace("\n", "<br>")
+            
+        data = {
+            "services" : services
+        }
+    except:
+        return HttpResponse("No product currently availiable")
+    return render(request, "indexService.html",data)
