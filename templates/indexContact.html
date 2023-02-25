@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href={% static 'assets/img/logo.jpg' %}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href={% static 'assets/css/styles.css' %}>
+    
+
+    <title>Wash Your Car at your doorstep.</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    
+    {% include 'header.html' %}
+
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="container section section__height" id="home">
+         </section>
+              
+
+         <div class="contact__upper">
+            <h2>Feel free to contact us!</h2>
+            <img  class="about__logo__img1" src={% static 'assets/img/logo.jpg' %} alt="">
+            <h2 >eMechanic</h2>
+    
+        </div>
+    
+        <div class="contact__lower">
+         <a href=""></a> <img class="contact__img" src={% static 'assets/contact-notsure-img/icons8-facebook-48.png' %} alt=""> facebook</a>
+         <a href=""></a> <img class="contact__img" src={% static 'assets/contact-notsure-img/icons8-instagram-48.png' %} alt="">instagram</a>
+         <a href=""></a>  <img class="contact__img" src={% static 'assets/contact-notsure-img/icons8-whatsapp-60.png' %} alt="">whats App</a>
+         <a href=""></a><img class="contact__img" src={% static 'assets/contact-notsure-img/icons8-gmail-logo-48.png' %} alt="">Gmail</a>
+    
+        </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src={% static 'assets/js/main.js' %}></script>
+
+</body>
+
+</html>

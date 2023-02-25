@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href={% static 'assets/img/logo.jpg' %}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href={% static 'assets/css/styles.css' %}>
+
+    <title>Wash Your Car at your doorstep.</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+   
+    {% include 'header.html' %}
+
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="container section section__height" id="home">
+
+            <div class="search__bar">
+
+                <input id="myInput" class="search__input" placeholder="Search" type="text" onkeypress="searchBlock()">
+                <img class="search__img" src={% static 'assets/img/revision-regular-24.png' %} onclick="ref()"  alt="">
+
+
+            </div>
+
+            <div class="shop__list">
+
+                <!-- single product start -->
+
+                <section class="shop__flex">
+                    <div class="left__block">
+                        <h2 class="value__search">Puncture Repair Kit</h2>
+                        <h3>$ 69</h3>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
+                            provident
+                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
+                            voluptas.</span>
+                    </div>
+                    <div class="right__block">
+
+                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt="">
+                        <button type="button" class="button__buy">Buy</button>
+                    </div>
+                </section>
+               
+
+                <!-- single product end -->
+                
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src={% static 'assets/js/main.js' %}></script>
+
+</body>
+
+</html>

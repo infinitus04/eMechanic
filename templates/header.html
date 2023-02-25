@@ -1,0 +1,47 @@
+{% load static %}
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">eMechanic</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/" class="nav__link active-link">
+                        <img class="bx nav__icon" src={% static 'assets/img/home.png' %} alt="">
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/service/" class="nav__link">
+                        <img class="bx nav__icon" src={% static 'assets/img/car.png' %} alt="">
+                        <span class="nav__name">Service</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/shop/" class="nav__link">
+                        <img class="bx nav__icon" src={% static 'assets/img/shop.png' %} alt="">
+                        <span class="nav__name">Shop</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/about/" class="nav__link">
+                        <img class="bx nav__icon" src={% static 'assets/img/group.png' %} alt="">
+                        <span class="nav__name">About Us</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/contact/" class="nav__link">
+                        <img class="bx nav__icon" src={% static 'assets/img/contact.png' %} alt="">
+                        <span class="nav__name">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <img src={% static 'assets/img/logo.jpg' %} alt="" class="nav__img">
+    </nav>
+</header>

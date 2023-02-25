@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href={% static 'assets/img/logo.jpg' %}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href={% static 'assets/css/styles.css' %}>
+
+    <title>Wash Your Car at your doorstep.</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    
+    {% include 'header.html' %}
+
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="container section section__height" id="home">
+
+            <div class="about__contain">
+                <img class="about__logo__img1" src={% static 'assets/img/logo.jpg' %} alt="">
+                <h2>eMechanic</h2>
+                <span>"It’s the fastest way to make your car look amazing and it’s easier than you think."</span>
+                <img class="about__logo__img2" src={% static 'assets/img/greeting-g435723ea6_640.png' %} alt="">
+                
+            </div>
+            <div class="about__bottom">
+                <h2 class="bottom__iterms">About us</h2>
+                <span class="bottom__iterms">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur, nam o
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sunt, libero quia rerum unde perferendis
+                    laboriosam cumque eum voluptatem nemo facilis mollitia quas neque necessitatibus commodi rem eos. Nihil
+                    nostrum facere magni beatae autem! dit voluptatum, impedit exercitationem dolor dignissimos dicta tenetur
+                    voluptatibus ea dolore perferendis necessitatibus?</span>
+
+                <h2 class="bottom__iterms">How we works ?</h2>
+                <span class="bottom__iterms">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur, nam o
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sunt, libero quia rerum unde perferendis
+                    laboriosam cumque eum voluptatem nemo facilis mollitia quas neque necessitatibus commodi rem eos. Nihil
+                    nostrum facere magni beatae autem! dit voluptatum, impedit exercitationem dolor dignissimos dicta tenetur
+                    voluptatibus ea dolore perferendis necessitatibus?</span>
+                
+
+                <h2 class="bottom__iterms">Service Details </h2>
+                <span class="bottom__iterms">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias consectetur, nam o
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sunt, libero quia rerum unde perferendis
+                    laboriosam cumque eum voluptatem nemo facilis mollitia quas neque necessitatibus commodi rem eos. Nihil
+                    nostrum facere magni beatae autem! dit voluptatum, impedit exercitationem dolor dignissimos dicta tenetur
+                    voluptatibus ea dolore perferendis necessitatibus?</span>
+                <h3 class="bottom__iterms">Only in Nagpur City</h3>
+
+              
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src={% static 'assets/js/main.js' %}></script>
+
+</body>
+
+</html>
