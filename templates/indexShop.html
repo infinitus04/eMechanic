@@ -36,18 +36,20 @@
 
                 <!-- single product start -->
                 
-                {% for product in products %}  
+                {% for data in allData %}  
 
                 <section class="shop__flex">
                     <div class="left__block">
-                        <h2 class="value__search">{{product.name}}</h2>
-                        <h3>Rs. {{product.price}}</h3>
-                        <span>{{product.dis}}</span>
+                        <h2 class="value__search">{{data.product.name}}</h2>
+                        <h3>Rs. {{data.product.price}}</h3>
+                        <span>{{data.product.dis}}</span>
                     </div>
                     <div class="right__block">
 
-                        <img class="shop__img" src="{{product.img}}" alt="">
-                        <button type="button" class="button__buy">Buy</button>
+                        <img class="shop__img" src="{{data.product.img}}" alt="">
+                        
+                        <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Buy</button></a>
+
                     </div>
                 </section>
 

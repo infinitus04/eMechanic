@@ -4,10 +4,20 @@ from .models import Product, Service
 # Create your views here.
 def home(request):
     try:
-        latestProduct = Product.objects.all().order_by('-id')[:5]
-        
+        latestProducts = Product.objects.all().order_by('-id')[:5]
+        # products = Product.objects.all()
+        # print(len(products))
+        allData = []
+        for p in latestProducts:
+            k = {}
+            p.dis = p.dis.replace("\n", "<br>") 
+            k["product"] = p
+            k["link"] = linkReplace(p.name)
+            allData.append(k)
+            # print(k["link"])
         data = {
-            "products" : latestProduct
+            
+            "allData" : allData
         }
     except:
         return HttpResponse("No product availiable")
@@ -19,8 +29,17 @@ def shop(request):
     try:
         products = Product.objects.all()
         # print(len(products))
+        allData = []
+        for p in products:
+            k = {}
+            p.dis = p.dis.replace("\n", "<br>") 
+            k["product"] = p
+            k["link"] = linkReplace(p.name)
+            allData.append(k)
+            # print(k["link"])
         data = {
-            "products" : products
+            
+            "allData" : allData
         }
     except:
         return HttpResponse("No product currently availiable")
@@ -38,12 +57,24 @@ def contact(request):
 def service(request):
     try:
         services = Service.objects.all()
+        allData =[]
         for s in services:
-            s.dis = s.dis.replace("\n", "<br>")
-            
+            k = {}
+            s.dis = s.dis.replace("\n", "<br>") 
+            k["service"] = s
+            k["link"] = linkReplace(s.name)
+            allData.append(k)
+            # print(k["link"])
         data = {
-            "services" : services
+            
+            "allData" : allData
         }
     except:
         return HttpResponse("No product currently availiable")
     return render(request, "indexService.html",data)
+
+def linkReplace(link):
+    replaced = link.replace(" ","%20")
+    replaced = "https://wa.me/9021043882?text=Enquiry%20for%0a"+replaced.replace("\n","%0a")
+    
+    return replaced
