@@ -35,23 +35,24 @@
             <div class="shop__list">
 
                 <!-- single product start -->
+                
+                {% for product in products %}  
 
                 <section class="shop__flex">
                     <div class="left__block">
-                        <h2 class="value__search"> Change name 2nd time</h2>
-                        <h3>$ 69</h3>
-                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur animi magni
-                            provident
-                            molestiae excepturi ab nostrum deserunt libero, dolorem, exercitationem commodi repudiandae
-                            voluptas.</span>
+                        <h2 class="value__search">{{product.name}}</h2>
+                        <h3>Rs. {{product.price}}</h3>
+                        <span>{{product.dis}}</span>
                     </div>
                     <div class="right__block">
 
-                        <img class="shop__img" src={% static 'assets/freeImg/6.jpeg' %} alt="">
+                        <img class="shop__img" src="{{product.img}}" alt="">
                         <button type="button" class="button__buy">Buy</button>
                     </div>
                 </section>
-               
+
+                {% endfor %}
+
 
                 <!-- single product end -->
                 
