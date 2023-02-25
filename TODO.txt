@@ -1,0 +1,5 @@
+-> Add whatsapp icon with "buy" button in indexShop
+-> Make "buy" Button Work 
+-> Make offer page
+-> Create DB for services
+-> Design chnages in about and contact page 
