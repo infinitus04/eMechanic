@@ -15,6 +15,127 @@
     <title>Wash Your Car at your doorstep.</title>
 </head>
 
+<style>
+    /* css for home image slider starts here */
+    .slider-container {
+        margin-top: 10px;
+        padding: 0;
+        margin: auto;
+        /* height: 100vh; */
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+        background: #23E3C9;
+    }
+
+    .slider {
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img {
+        width: 800px;
+        height: 500px;
+    }
+
+    /*css for manual slide navigation*/
+
+    .navigation-manual {
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background: #40D3DC;
+    }
+
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+        margin-left: -20%;
+    }
+
+    #radio3:checked~.first {
+        margin-left: -40%;
+    }
+
+    #radio4:checked~.first {
+        margin-left: -60%;
+    }
+
+    /*css for automatic navigation*/
+
+    .navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-top: 460px;
+    }
+
+    .navigation-auto div {
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    #radio1:checked~.navigation-auto .auto-btn1 {
+        background: #40D3DC;
+    }
+
+    #radio2:checked~.navigation-auto .auto-btn2 {
+        background: #40D3DC;
+    }
+
+    #radio3:checked~.navigation-auto .auto-btn3 {
+        background: #40D3DC;
+    }
+
+    #radio4:checked~.navigation-auto .auto-btn4 {
+        background: #40D3DC;
+    }
+</style>
+
 <body>
     <!--=============== HEADER ===============-->
 
@@ -24,45 +145,55 @@
         <!--=============== HOME ===============-->
         <section class="container section section__height" id="home">
             <h2 class="section__title">Welcome </h2>
-            <div class="scroll">
 
-                <section class="sec__block">
-                    <img class="scroll__img" src={% static 'assets/freeImg/7.jpeg' %} alt= "">
 
-                    <a href="#"></a>
+            <div class="slider-container">
 
-                </section>
-                <section class="sec__block">
-                    <img class="scroll__img" src={% static 'assets/freeImg/Free Photo Close up on car care process.jpeg' %} alt= "">
-                    <a href="#"></a>
-                </section>
-                <section class="sec__block">
-                    <img class="scroll__img" src={% static 'assets/freeImg/Free Photo Man polish a car in a garage(1).jpeg' %}
-                        alt= "">
-                    <a href="#"></a>
-                </section>
-                <section class="sec__block">
-                    <img class="scroll__img"
-                        src={% static 'assets/freeImg/Free Photo Professional washer in blue uniform washing luxury car with water gun on an open air car wash.jpeg' %}
-                        alt= "">
-                    <a href="#"></a>
-                </section>
-                <section class="sec__block">
 
-                    <img class="scroll__img" src={% static 'assets/freeImg/5.jpeg' %} alt= "">
-                    <a href="#"></a>
-                </section class="sec__block">
-                <section>
-                    <img class="scroll__img" src={% static 'assets/freeImg/6.jpeg' %} alt= "">
-                    <a href="#"></a>
-                </section>
-                <section class="sec__block">
-                    <img class="scroll__img" src={% static 'assets/freeImg/Free Photo Car wash detailing station.jpeg' %} alt= "">
-                    <a href="#"></a>
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--radio buttons end-->
+                        <!--slide images start-->
+                        <div class="slide first">
+                            <img src={% static 'assets/freeImg/1.jpeg' %} alt="">
+                        </div>
+                        <div class="slide">
+                            <img src={% static 'assets/freeImg/2.jpeg' %} alt="">
+                        </div>
+                        <div class="slide">
+                            <img src={% static 'assets/freeImg/3.jpeg' %} alt="">
+                        </div>
+                        <div class="slide">
+                            <img src={% static 'assets/freeImg/4.jpeg' %} alt="">
+                        </div>
+                        <!--slide images end-->
+                        <!--automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
 
-                </section>
 
-            </div>
 
 
         </section>
@@ -71,13 +202,13 @@
         <section class="container section section__height" id="about">
             <h2 class="section__title">Recently Added</h2>
 
-            
+
             <div class="shop__list">
                 <!-- div -> shop__flex 1 block of code (section here) crating by for loop  -->
-                
+
                 {% for data in allData %}
-                    
-                    
+
+
                 <section class="shop__flex">
                     <div class="left__block">
                         <h2 class="font_black">{{data.product.name}}</h2>
@@ -86,8 +217,9 @@
                     </div>
                     <div class="right__block">
 
-                        <img class="shop__img" src="{{data.product.img}}" alt= "">
-                        <a href="{{data.link}}" target="_blank"><button type="button" class="button__buy">Buy</button></a>
+                        <img class="shop__img" src="{{data.product.img}}" alt="">
+                        <a href="{{data.link}}" target="_blank"><button type="button"
+                                class="button__buy">Buy</button></a>
                     </div>
                 </section>
                 <!-- section and loop end -->
@@ -106,15 +238,17 @@
     <!--=============== MAIN JS ===============-->
     <script src={% static 'assets/js/main.js' %}></script>
 
+
 </body>
 <!-- ====================== Footer ===================== -->
 <footer class="footer__custom">
     <div class="media__logo">
-        <a href="#"></a><img id="contact" class="footer__logo" src={% static 'assets/img/facebook-logo-24.png' %} alt= ""> </a>
-        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/whatsapp-logo-24.png' %} alt= ""> </a>
-        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/instagram-logo-24.png' %} alt= ""> </a>
-        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/twitter-logo-24.png' %} alt= ""> </a>
-        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/github-logo-24.png' %} alt= ""> </a>
+        <a href="#"></a><img id="contact" class="footer__logo" src={% static 'assets/img/facebook-logo-24.png' %}
+            alt=""> </a>
+        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/whatsapp-logo-24.png' %} alt=""> </a>
+        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/instagram-logo-24.png' %} alt=""> </a>
+        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/twitter-logo-24.png' %} alt=""> </a>
+        <a href="#"></a><img class="footer__logo" src={% static 'assets/img/github-logo-24.png' %} alt=""> </a>
     </div>
     <div class="copyright__block">
         @ copyright 2023
