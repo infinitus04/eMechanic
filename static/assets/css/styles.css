@@ -488,7 +488,7 @@ a {
 
 }
 
-/* =========== Service onClick Page change block============ */
+/* =========== Service onClick Page change block ============ */
 .service__block {
 
   display: flex;
@@ -516,7 +516,7 @@ a {
 .service__img {
   height: 12rem;
   width: 20rem;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .service__section {

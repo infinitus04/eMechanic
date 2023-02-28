@@ -46,8 +46,13 @@ const searchBlock = () => {
  
 };
 
+
+  
 const ref = ()=>{
 
+
+
+ 
     let sec2 = document.getElementsByClassName("shop__flex");
 
    for (let index = 0; index < sec2.length; index++) {
