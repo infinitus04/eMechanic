@@ -75,19 +75,19 @@
             <div class="shop__list">
                 <!-- div -> shop__flex 1 block of code (section here) crating by for loop  -->
                 
-                {% for product in products %}
+                {% for data in allData %}
                     
                     
                 <section class="shop__flex">
                     <div class="left__block">
-                        <h2 class="font_black">{{product.name}}</h2>
-                        <h3 class="font_black">Rs. {{product.price}}</h3>
-                        <span>{{product.dis}}</span>
+                        <h2 class="font_black">{{data.product.name}}</h2>
+                        <h3 class="font_black">Rs. {{data.product.price}}</h3>
+                        <span>{{data.product.dis}}</span>
                     </div>
                     <div class="right__block">
 
-                        <img class="shop__img" src="{{product.img}}" alt= "">
-                        <button type="button" class="button__buy">Buy</button>
+                        <img class="shop__img" src="{{data.product.img}}" alt= "">
+                        <a href="{{data.link}}" target="_blank"><button type="button" class="button__buy">Buy</button></a>
                     </div>
                 </section>
                 <!-- section and loop end -->
