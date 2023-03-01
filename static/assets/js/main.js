@@ -46,8 +46,13 @@ const searchBlock = () => {
  
 };
 
+
+  
 const ref = ()=>{
 
+
+
+ 
     let sec2 = document.getElementsByClassName("shop__flex");
 
    for (let index = 0; index < sec2.length; index++) {
@@ -58,6 +63,16 @@ const ref = ()=>{
    }
     
   }
+
+  // js for image slider
+  var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 4000);
 
 
 
