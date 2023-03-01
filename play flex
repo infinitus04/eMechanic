@@ -1,0 +1,85 @@
+[33mcommit 84770f9cc7dc89afe2898aeaad3aea90a91c9495[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: c7dbb0b 382f7bf
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Tue Feb 28 16:34:44 2023 +0530
+
+    Merge branch 'main' of github.com:infinitus04/eMechanic
+
+[33mcommit c7dbb0ba8d2321d24dd04d11325cda1b6cc0f861[m
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Tue Feb 28 16:33:42 2023 +0530
+
+    small updates
+
+[33mcommit 382f7bf61e8d64f6d2e7b5a1b1786dcfd78a2666[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sun Feb 26 02:21:12 2023 +0530
+
+    Buttons redirect WA added
+
+[33mcommit d6e6f523472e1940aa5b247cdd8c27a6663aae40[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 21:26:06 2023 +0530
+
+    Y- crested services DB, added in services
+
+[33mcommit f8bb73487bb90acdd82a66e54a8aecb9f8fea6c5[m
+Merge: c0c7295 6900fcd
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Sat Feb 25 18:49:51 2023 +0530
+
+    p__recommit__nochange__pullError
+
+[33mcommit c0c72950b1985bee0a2efae6ae2dda7988773499[m
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Sat Feb 25 18:43:05 2023 +0530
+
+    p__ change in nav bar color and free img update
+
+[33mcommit 6900fcda8a3c9c4eb101607c7d77e235672d8eff[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 17:33:29 2023 +0530
+
+    Y - "Latest prods" feature added home(index)
+
+[33mcommit 7ff60071046aadcdc86fba575b526dc6b828f4ef[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 15:59:24 2023 +0530
+
+    Added ToDo List
+
+[33mcommit eb4ec61f8e3e92ba23b6dbdddf895406496124be[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 15:50:17 2023 +0530
+
+    Y- Product DB create & shop connected to DB
+
+[33mcommit feaecf6270471d4d9ef8f5b5eb65f271778be5c1[m
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Sat Feb 25 15:39:33 2023 +0530
+
+    p__ css changes -> navBar and shop section -> search bar changes
+
+[33mcommit 9fe5956275579819535be23411ad05ac9e0f8b1d[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 14:02:05 2023 +0530
+
+    Y test
+
+[33mcommit 7222c77fc344d131c5cfa1b7b38edaf9ffa5fc7e[m
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Sat Feb 25 13:58:02 2023 +0530
+
+    change p
+
+[33mcommit e209db2bf33d34843ff16c5c1de84bbf929174cc[m
+Author: prafulSawarkar <prafulsavarkarr77889900@gmail.com>
+Date:   Sat Feb 25 13:52:37 2023 +0530
+
+    change of product name
+
+[33mcommit 5ee6b0d01a067c721540ad8f66be03a430f6e0fe[m
+Author: infinitus <infinitusdevelops@gmail.com>
+Date:   Sat Feb 25 13:13:56 2023 +0530
+
+    first commit
