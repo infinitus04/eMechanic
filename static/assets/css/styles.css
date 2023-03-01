@@ -173,11 +173,11 @@ a {
   
 }
 
+
 .nav__link:focus {
   color: var(--first-color);
   fill: var(--first-color) ;
 }
-
 
 .nav__list {
   justify-content: space-around;
@@ -189,7 +189,6 @@ a {
   /* Minimalist design, hidden labels */
 
 }
-
 .nav__icon {
   font-size: 1.5rem;
   height: 24px;
