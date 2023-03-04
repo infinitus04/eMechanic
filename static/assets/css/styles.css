@@ -434,7 +434,7 @@ a {
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 0.5rem;
-  height: 2rem;
+  height: 2.5rem;
   width: 6rem;
   margin: auto;
   margin-top: 0.3rem;
@@ -497,24 +497,23 @@ a {
 /* =========== Service onClick Page change block============ */
 .service__block {
 
-  display: flex;
+   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
-  margin: auto;
   text-align: center;
-  padding: 1rem 0 1rem 0;
-  /* width: 93%; */
-  background-color: #F5F5F5;
-  margin: 1rem 0 2rem 0;
-  border-radius: 2px 0 2px 0;
+  padding: 1rem ;
+  background-color:   white;
+  box-shadow:  0px 5px 20px 1px #101010;
+  margin: 1rem 1rem 3rem 1rem ;
+  border-radius:1rem;
 
 
 }
 
 .service__block:hover {
 
-  background-color: rgb(235, 235, 235);
+background-color: 	#F0F0F0;
 
 }
 
@@ -527,7 +526,7 @@ a {
 
 .service__section {
 
-  /* max-height: fit-content; */
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
