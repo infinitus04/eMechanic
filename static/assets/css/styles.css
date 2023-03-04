@@ -521,7 +521,8 @@ background-color: 	#F0F0F0;
 .service__img {
   height: 12rem;
   width: 20rem;
-  margin: auto;
+  margin:2rem  auto;
+  border-radius: 0.5rem;
 }
 
 .service__section {
