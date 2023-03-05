@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href={% static 'assets/img/logo.jpg' %}>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 
 
@@ -59,7 +60,9 @@
                     <div class="left__block">
                         <h2 class="font_black">{{data.product.name}}</h2>
                         <h3 class="font_black">Rs. {{data.product.price}}</h3>
-                        <span>{{data.product.dis | safe}}</span>
+                        <p class="content" >{{data.product.dis}}</p>
+                        <button class="readmore__btn" onclick="readMore(this)">Read More</button>
+
                     </div>
                     <div class="right__block">
 

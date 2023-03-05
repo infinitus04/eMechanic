@@ -42,7 +42,8 @@
                     <div class="left__block">
                         <h2 class="value__search">{{data.product.name}}</h2>
                         <h3>Rs. {{data.product.price}}</h3>
-                        <span>{{data.product.dis | safe }}</span>
+                        <p class="content" >{{data.product.dis}}</p>
+                        <button class="readmore__btn" onclick="readMore(this)">Read More</button>
                     </div>
                     <div class="right__block">
 

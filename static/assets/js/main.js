@@ -3,7 +3,7 @@
 const searchBlock = () => {
 
   let filter = document.getElementById("myInput").value.toUpperCase();
-  console.log("Input value = "+filter); // input value
+
 
   let valueof = document.getElementsByClassName("value__search");
   // console.log(valueof);// list call of title
@@ -17,7 +17,7 @@ const searchBlock = () => {
     subValue = subValue.substring(0, 5);// compairing with upto 5th char
     filter = filter.substring(0, 5);// compairing with upto 5th char
 
-     console.log(" compairing value = "+subValue);
+    
     
 
      if(filter == ""){
@@ -62,37 +62,33 @@ const ref = ()=>{
     
    }
     
-  }
+  };
 
-//  js for nevigation colour change 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+// show more 
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+let noOfCharac = 150;
+let contents = document.querySelectorAll(".content");
+contents.forEach(content => {
+    //If text length is less that noOfCharac... then hide the read more button
+    if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+    }
+    else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    }
+});
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 50,
-            sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
+function readMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
 }
-window.addEventListener('scroll', scrollActive)
 
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader(){
-    const header = document.getElementById('header')
-    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+
 
    
 
