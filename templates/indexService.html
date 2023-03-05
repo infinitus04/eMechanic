@@ -32,7 +32,7 @@
                     <img class="service__img" src="{{data.service.img}}" alt="">
                     <h2 class="font_black">{{data.service.name}}</h2>
                     <h3 class="font_black">from Rs. {{data.service.minPrice}} to Rs. {{data.service.maxPrice}}</h3>
-                    <span>{{data.service.dis | safe}}</span>
+                    <span class="service__span">{{data.service.dis | safe}}</span>
                     <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Whatspp</button></a>
                 </div>
                 {% endfor %}

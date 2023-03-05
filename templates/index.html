@@ -11,6 +11,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href={% static 'assets/css/styles.css' %}>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <title>Wash Your Car at your doorstep.</title>
 </head>
@@ -27,40 +28,17 @@
         <section class="container section section__height" id="home">
             <h2 class="section__title">Welcome </h2>
   
-  
-            <!-- image slider starts here -->
+            
+            <!-- image slider starts here  ( Flickity)-->
 
-            <div class="slider-container">
-             <div class="img-slider">
-      <div class="slide active">
-        <img src={% static 'assets/freeImg/1.jpeg' %} alt="">
-      </div>
-      <div class="slide">
-        <img src={% static 'assets/freeImg/2.jpeg' %} alt="">
-        
-      </div>
-      <div class="slide">
-        <img src={% static 'assets/freeImg/3.jpeg' %} alt="">
-        
-      </div>
-      <div class="slide">
-        <img src={% static 'assets/freeImg/4.jpeg' %} alt="">
-        
-      </div>
-      <div class="slide">
-        <img src={% static 'assets/freeImg/5.jpeg' %} alt="">
-    
-      </div>
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-      </div>
-    </div>
-</div>
-
+            <div class="carousel" data-flickity= '{ "wrapAround": true , "autoPlay": true }'>
+              <div class="carousel-cell"><img src={% static 'assets/freeImg/1.jpeg' %} class="scroll__img"  alt=""></div>
+              <div class="carousel-cell"><img src={% static 'assets/freeImg/2.jpeg' %} class="scroll__img"  alt=""></div>
+              <div class="carousel-cell"><img src={% static 'assets/freeImg/3.jpeg' %} class="scroll__img"  alt=""></div>
+              <div class="carousel-cell"><img src={% static 'assets/freeImg/4.jpeg' %} class="scroll__img"  alt=""></div>
+              <div class="carousel-cell"><img src={% static 'assets/freeImg/5.jpeg' %} class="scroll__img"  alt=""></div>
+            
+            </div>
             <!-- image slider ends here -->
 
 
@@ -105,6 +83,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src={% static 'assets/js/main.js' %}></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     
 
 

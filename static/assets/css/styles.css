@@ -364,9 +364,14 @@ a {
 }
 
 
+.carousel-cell{
+  /* height: fit-content; */
+  height: 15rem;
+}
+
 .scroll__img {
-  height: 8rem;
-  width: 15rem;
+  height: 15rem;
+  width: auto;
   /* margin: 1rem; */
   margin: 0 1rem 0 1rem;
   border-radius: 0.6rem;
@@ -376,7 +381,6 @@ a {
 
 
 }
-
 
 
 .scroll__img:hover {
@@ -437,7 +441,7 @@ a {
   height: 2.5rem;
   width: 6rem;
   margin: auto;
-  margin-top: 0.3rem;
+  margin-top: 0.8rem;
 }
 
 .button__buy:hover {
@@ -458,6 +462,7 @@ a {
 .font_black {
 
   color: black;
+  margin: 0.2rem auto;
 
 }
 
@@ -534,6 +539,12 @@ background-color: 	#F0F0F0;
   align-items: center;
   justify-self: center;
 
+}
+
+.service__span{
+
+  margin: 0.5rem;
+  padding: 0.2rem;
 }
 
 /* ============== shoping with serch bar css====================== */
