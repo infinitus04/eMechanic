@@ -185,7 +185,7 @@ a {
 /* ##################################################### */
 /* ##################################################### */
 /* apply this css in if else conditon with url ex. /service */
-/* .nav__link__active {
+.nav__link__active {
   
   flex-direction: column;
   align-items: center;
@@ -193,7 +193,7 @@ a {
   color: var(--first-color);
   fill: var(--first-color) ;
   font-weight: 600;
-} */
+}
 
 .nav__link:focus {
   color: var(--first-color);
