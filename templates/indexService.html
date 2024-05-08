@@ -28,17 +28,60 @@
                 {% for data in allData %}
                     
                     
-                <div class="service__block">
+                <!-- <div class="service__block">
                     <img class="service__img" src="{{data.service.img}}" alt="">
                     <h2 class="font_black">{{data.service.name}}</h2>
                     <h3 class="font_black">from Rs. {{data.service.minPrice}} to Rs. {{data.service.maxPrice}}</h3>
                     <span class="service__span">{{data.service.dis | safe}}</span>
                     <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Whatspp</button></a>
+                </div> -->
+                <!-- end card -->
+
+                <div class="newServiceBlock">
+                    <div class="serviceImgLeft">
+                        <img src="{{data.service.img}}" alt="">
+                    </div>
+                    <div class="serviceDataRight">
+                        <h2>{{data.service.name}}</h2>
+                        <h3>from Rs. {{data.service.minPrice}} to Rs. {{data.service.maxPrice}}</h3>
+                        <span>{{data.service.dis | safe}}</span>
+                        <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Whatspp</button></a>
+                    </div>
+                    
                 </div>
+
                 {% endfor %}
             </div>
 
+            <div class="newServiceBlock">
+                <div class="serviceImgLeft">
+                    <img src="https://i.ibb.co/6J6SqFj/image.png" alt="">
+                </div>
+                <div class="serviceDataRight">
+                    <h2>Interior cleaning and vacuuming</h2>
+                    <h3>from 890 to 900</h3>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea, nesciunt mollitia, unde eius eveniet eos culpa alias, sint ipsum inventore impedit ipsa voluptates ab quam. Delectus ut atque debitis!</span>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea, nesciunt mollitia, unde eius eveniet eos culpa alias, sint ipsum inventore impedit ipsa voluptates ab quam. Delectus ut atque debitis!</span>
+                    <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Whatspp</button></a>
+                </div>
+                
+            </div>
+
         </section>
+
+        <!-- <div class="newServiceBlock">
+            <div class="serviceImgLeft">
+                <img src="https://i.ibb.co/6J6SqFj/image.png" alt="">
+            </div>
+            <div class="serviceDataRight">
+                <h2>Interior cleaning and vacuuming</h2>
+                <h3>from 890 to 900</h3>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea, nesciunt mollitia, unde eius eveniet eos culpa alias, sint ipsum inventore impedit ipsa voluptates ab quam. Delectus ut atque debitis!</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea, nesciunt mollitia, unde eius eveniet eos culpa alias, sint ipsum inventore impedit ipsa voluptates ab quam. Delectus ut atque debitis!</span>
+                <a href="{{data.link}}" target="_blank"> <button type="button" class="button__buy">Whatspp</button></a>
+            </div>
+            
+        </div> -->
 
 
 
